@@ -6,4 +6,6 @@ with open('chandra.txt','r') as read:
             print(line)
             write.write(line)
 
+print("im going to execute at the end.")
+
 
