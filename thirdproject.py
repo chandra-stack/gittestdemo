@@ -6,7 +6,7 @@ file = open('chandra.txt')
 for line in file.readlines():
     print(line)
 
-
+print("hey im an developer2")
 file.close()
 
 
