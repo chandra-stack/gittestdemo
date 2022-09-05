@@ -1,0 +1,29 @@
+name : Python file runner workflow
+
+on :   
+  push :
+    branches : ["master"]
+  
+  pull_request :
+    branches : ["master"]
+  
+  issues :
+    type : 
+    - created
+
+jobs : 
+  Python-environment-setup:
+    runs-on : ubuntu-latest
+  
+    steps : 
+    - uses : actions/checkout@v3
+      name : Setting up the python environment
+    
+    - uses : actions/setup-python@v4
+      name: Running basic commands
+      
+    - run : python --version
+      
+    
+
+
